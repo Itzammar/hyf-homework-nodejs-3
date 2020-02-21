@@ -1,13 +1,12 @@
 const express = require('express');
 const app = express();
 
-var users = [];
+var users = []
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
 });
 
-/* GET USERS LIST (EMPTY) */
 app.get('/users', (req, res) => {
     res.send(users);
 })
